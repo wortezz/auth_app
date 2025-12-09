@@ -2,5 +2,7 @@
 source "https://rubygems.org"
 
 gem "sinatra"
-gem "sinatra-contrib" # для cookies, session тощо
-gem "bcrypt"          # якщо використовуєш для паролів
+gem "sinatra-contrib"
+gem "rack"
+gem "puma"
+

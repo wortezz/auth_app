@@ -2,11 +2,13 @@ GEM
   remote: https://rubygems.org/
   specs:
     base64 (0.3.0)
-    bcrypt (3.1.20)
     logger (1.7.0)
     multi_json (1.18.0)
     mustermann (3.0.4)
       ruby2_keywords (~> 0.0.1)
+    nio4r (2.7.5)
+    puma (7.1.0)
+      nio4r (~> 2.0)
     rack (3.2.4)
     rack-protection (4.2.1)
       base64 (>= 0.1.0)
@@ -36,16 +38,18 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  bcrypt
+  puma
+  rack
   sinatra
   sinatra-contrib
 
 CHECKSUMS
   base64 (0.3.0) sha256=27337aeabad6ffae05c265c450490628ef3ebd4b67be58257393227588f5a97b
-  bcrypt (3.1.20) sha256=8410f8c7b3ed54a3c00cd2456bf13917d695117f033218e2483b2e40b0784099
   logger (1.7.0) sha256=196edec7cc44b66cfb40f9755ce11b392f21f7967696af15d274dde7edff0203
   multi_json (1.18.0) sha256=23f70cf73e2895a33e6d10f0ec955b28ef5627ca4bbad0f292e7d16f4675596f
   mustermann (3.0.4) sha256=85fadcb6b3c6493a8b511b42426f904b7f27b282835502233dd154daab13aa22
+  nio4r (2.7.5)
+  puma (7.1.0)
   rack (3.2.4) sha256=5d74b6f75082a643f43c1e76b419c40f0e5527fcfee1e669ac1e6b73c0ccb6f6
   rack-protection (4.2.1) sha256=cf6e2842df8c55f5e4d1a4be015e603e19e9bc3a7178bae58949ccbb58558bac
   rack-session (2.1.1) sha256=0b6dc07dea7e4b583f58a48e8b806d4c9f1c6c9214ebc202ec94562cbea2e4e9

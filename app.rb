@@ -4,6 +4,10 @@ require 'sinatra/cookies'
 
 enable :sessions
 
+# --- Docker-friendly settings ---
+set :bind, '0.0.0.0'
+set :port, 4567
+
 # Використовуємо layout для всіх сторінок
 set :erb, layout: :'layout'
 
