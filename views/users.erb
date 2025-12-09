@@ -1,0 +1,10 @@
+<h1>Зареєстровані користувачі</h1>
+
+<ul>
+  <% @users.each do |u| %>
+    <li><%= u["name"] %> (<%= u["email"] %>)</li>
+  <% end %>
+</ul>
+
+<a href="/welcome"><button>Назад</button></a>
+<a href="/logout"><button>Вийти</button></a>
