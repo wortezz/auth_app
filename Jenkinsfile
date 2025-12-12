@@ -27,7 +27,7 @@ pipeline {
 
         stage('Test App') {
             steps {
-                sh 'sleep 5' // даємо контейнеру стартанути
+                sh 'sleep 5'
                 sh 'curl -f http://localhost:4567 || exit 1'
             }
         }
